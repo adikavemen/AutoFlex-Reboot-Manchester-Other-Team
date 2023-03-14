@@ -1,21 +1,25 @@
 {
-  "name": "autoflex",
+  "name": "io.cordova.hellocordova",
+  "displayName": "HelloCordova",
   "version": "1.0.0",
-  "main": "node_modules/expo/AppEntry.js",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
   "scripts": {
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "expo": "~48.0.6",
-    "expo-status-bar": "~1.4.4",
-    "react": "18.2.0",
-    "react-native": "0.71.3"
-  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
   "devDependencies": {
-    "@babel/core": "^7.20.0"
+    "cordova-android": "^10.1.2",
+    "cordova-browser": "^6.0.0"
   },
-  "private": true
+  "cordova": {
+    "platforms": [
+      "browser",
+      "android"
+    ]
+  }
 }
